@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* Resets */
+
+/* Box Sizing Reset */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Img reset */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/* Type Styles */
+
+/* heading font */
+h1, h2, h3, nav a {
+     font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    max-width: 2150px;
+    margin: 0 auto;
+}
