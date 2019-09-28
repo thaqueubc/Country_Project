@@ -1,5 +1,5 @@
 const body = document.body;
-const btn = document.getElementById('.btn');
+const btn = document.getElementById('nav-button');
 
 btn.addEventListener('click', _ => body.classList.toggle('show'));
 

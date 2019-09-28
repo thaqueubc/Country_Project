@@ -33,7 +33,7 @@ p {
 
 /* Wrapper Styles */
 .wrapper {
-    max-width: 1920px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -63,11 +63,11 @@ header h1 {
 
 
 /* style for nav bar */
-nav{
+.top-bar nav{
     display: none;
 }
 
-.btn {
+.nav-button {
     font-size: 1.5em;
     background-color: black;
     border: none;
@@ -113,4 +113,5 @@ nav{
 
 .banner img {
     display: block;
+    width: 100%
 }
