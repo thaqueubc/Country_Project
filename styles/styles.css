@@ -33,7 +33,7 @@ p {
 
 /* Wrapper Styles */
 .wrapper {
-    max-width: 2150px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -61,8 +61,56 @@ header h1 {
     padding: 8px;
 }
 
-.btn{
+
+/* style for nav bar */
+nav{
     display: none;
 }
 
-/* style for nav bar */
+.btn {
+    font-size: 1.5em;
+    background-color: black;
+    border: none;
+    color: white;
+    display: block;
+    height: 50px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    display: block;
+    height: 25px;
+}
+
+.show .top-bar nav {
+    width: 100%;
+    display: block;
+}
+
+.top-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-bar nav a {
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: 1.2em;
+    transition: background-color 0.5s ease;
+    display: block;
+}
+
+.top-bar nav a:hover,
+.top-bar nav a:active,
+.top-bar nav a:focus {
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.banner img {
+    display: block;
+}
