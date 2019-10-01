@@ -42,7 +42,8 @@ header a{
     text-decoration: none;
     margin: 0;
     padding: 0;
-    color: white;
+    color:black;
+    
 }
 
 header h1 {
@@ -51,11 +52,12 @@ header h1 {
     font-family: 'Lobster', cursive;
     text-transform: uppercase;
     padding-left: 20px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 /* Top-bar style */
 .top-bar{
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color:rgba(190, 35, 35, 0.87);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -72,9 +74,9 @@ header h1 {
 
 .nav-button {
     font-size: 1.5em;
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color:transparent;
     border: none;
-    color: white;
+    color: black;
     display: block;
     height: 50px;
     line-height: 1;
@@ -129,12 +131,54 @@ main{
     width: 33%;
     margin: 10px;
     border:1px solid black;
-    line-height: 50vh;
+    padding: 10px;
 }
 
 .part-b{
     width: 66%;
     border:1px solid red;
     margin: 10px;
+    padding: 10px;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+@media (min-width:650px){
+    header {
+        position: relative;
+    }
+
+    .top-bar {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .top-bar nav {
+        display: block;
+    }
+
+    .top-bar ul {
+        display: flex;
+    }
+
+    .top-bar nav a {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+    }
+
+}
