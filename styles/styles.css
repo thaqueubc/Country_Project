@@ -121,24 +121,47 @@ header h1 {
     width: 100%;
 }
 
+.banner_tourism{
+    width: 100%;
+}
+
 /* style for main section */
 
 main{
     display: flex;
 }
 
-.part-a{
-    width: 33%;
-    margin: 10px;
-    border:1px solid black;
-    padding: 10px;
+.history{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.part-b{
-    width: 66%;
-    border:1px solid red;
-    margin: 10px;
+.history h1{
+    width: 100%;
     padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.history article{
+    width: 70%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.history img{
+    width: 25%;
+    padding: 10px;
+    margin: 5px;
+}
+
+footer{
+    border-top: 1px dotted red;
+}
+
+footer p{
+    text-transform: uppercase;
 }
 
 .sr-only {
