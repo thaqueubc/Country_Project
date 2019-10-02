@@ -129,33 +129,81 @@ header h1 {
 
 main{
     display: flex;
+    padding: 10px;
+    margin: 10px;
 }
 
-.history{
+/* Style for History page article  */
+
+.history-h1 {
+	text-align: center;	
+}
+
+.history_article {
+    margin: 10px;
+    padding: 0 10px;
+}
+
+
+.history_article .featured-image {
+	width: 39%;
+	float: right;
+	margin-left: 20px;	
+}
+
+.history-btn a{
+    text-decoration: none;
+}
+
+.lib-war{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.history h1{
-    width: 100%;
-    padding: 10px;
-    margin: 5px;
-    text-align: center;
+.part1{
+    flex: 0 0 65%;
 }
 
-.history article{
-    width: 70%;
-    padding: 10px;
-    margin: 5px;
+/* Slideshow User Interface Elements */
+.slideshow-container {
+    flex: 0 0 30%;
+    position: relative;
+    max-width: 400px;
 }
 
-.history img{
-    width: 25%;
-    padding: 10px;
-    margin: 5px;
+.cycle-pager {
+    position: absolute;
+    font-size: 3em;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 900;
+    color: #818181;
 }
 
+.cycle-pager-active {
+    color: orange;
+}
+
+.controls button {
+    font-size: 5em;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 900;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Style for footer */
 footer{
     border-top: 1px dotted red;
 }
