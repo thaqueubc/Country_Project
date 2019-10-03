@@ -127,11 +127,75 @@ header h1 {
 
 /* style for main section */
 
-main{
+.main_home{
     display: flex;
+    justify-content: space-between;
     padding: 10px;
     margin: 10px;
 }
+
+.content{
+    flex: 1 1 78%; 
+}
+
+
+
+/* Style for Weather  */
+aside#weather{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float:right;
+	text-align:center; 
+    flex:1 1 20%;
+	padding:20px;
+	background-color:#4AB4A5;
+	outline:1px dashed #dfdfdf;
+	outline-offset:-5px;
+	border-radius:4px;
+    -o-box-shadow:0px 2px 10px -1px rgba(0,0,0,0.4);
+    -ms-box-shadow:0px 2px 10px -1px rgba(0,0,0,0.4);
+    -moz-box-shadow:0px 2px 10px -1px rgba(0,0,0,0.4);
+    -webkit-box-shadow:0px 2px 10px -1px rgba(0,0,0,0.4);
+    box-shadow:0px 2px 10px -1px rgba(0,0,0,0.4);
+    margin-bottom:20px; 
+}
+
+#weather_icon img{
+	width:107px;
+	height:107px;
+	float:left;
+}
+
+aside#weather h3{
+	color:black;
+	margin-bottom:20px;
+	font-size:1.1rem;
+}
+
+aside#weather h4{
+	color:#F1F1F1;
+	font-weight:500;
+	padding-top:10px;
+	font-size:0.9rem;
+}
+
+aside#weather table{
+	color:#F1F1F1;
+	float:left;
+	width:55%;
+	margin:0 auto;
+	margin-top:20px;
+	font-family:'Roboto', sans-serif;
+	font-size:1rem;
+	font-weight:300;
+}
+
+aside#weather table tr:first-child th{
+	padding-bottom:15px;
+
+}
+
 
 /* Style for History page article  */
 
@@ -203,6 +267,33 @@ main{
     right: 10px;
 }
 
+/* Style for Tourism page */
+
+
+.h1_tourism{
+    text-align: center;
+    width: 100%;
+}
+
+section.tourism{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.tourist_spot{
+    flex: 1;
+    margin: 10px;
+}
+
+.t-btn{
+    align-content: center;
+}
+
+.t-btn a{
+    text-decoration: none;
+}
 /* Style for footer */
 footer{
     border-top: 1px dotted red;

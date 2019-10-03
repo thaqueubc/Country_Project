@@ -1,0 +1,111 @@
+/* form */
+
+.form-container {
+    max-width: 550px;
+    background-color: blanchedalmond;
+    height: auto;
+    margin-top: 10px;
+    border:2px dotted black;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size:2em;
+    color: black;
+    padding-top: 5px auto;
+   
+}
+
+.form-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form {
+   padding: 5px auto;
+    height: auto;
+}
+
+form label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    float: left;
+    display: block;
+    width: 200px;
+}
+
+
+form label[for="name"],
+form label[for="email"],
+form label[for="phone"],
+form label[for="guests"],
+form label[for="date"],
+form label[for="comments"],
+form label[for="pickup"] {
+    clear: both;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    display: block;
+    text-align: right;
+}
+
+form input[type="name"],
+form input[type="email"],
+form input[type="phone"],
+form input[type="guests"],
+form input[type="date"] {
+    margin-bottom: 20px;
+}
+
+select {
+    margin-bottom: 35px;
+}
+
+form input[type="name"],
+form input[type="email"],
+form input[type="phone"],
+form input[type="guests"],
+form input[type="date"],
+select,
+textarea {
+    display: block;
+    border: none;
+    text-align: right;
+    width: 300px;
+}
+
+textarea {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+form input[type="radio"] {
+    float: left;
+    display: block;
+    width: auto;
+    
+}
+
+form input[type="checkbox"] + p {
+    margin-top: 50px;
+}
+
+form p {
+    font-size: 25px;
+}
+
+form input[type="submit"] {
+    padding: 10px 0 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: 400px;
+    color: black;
+    margin: 30px auto;
+    display: block;
+}
