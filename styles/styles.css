@@ -57,7 +57,7 @@ header h1 {
 
 /* Top-bar style */
 .top-bar{
-    background-color:rgba(190, 35, 35, 0.87);
+    background: linear-gradient(to bottom, #a51f1f 0%,#981d1e 26%,#701717 78%,#641616 100%);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
