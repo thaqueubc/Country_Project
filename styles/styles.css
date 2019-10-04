@@ -127,6 +127,10 @@ header h1 {
 
 /* style for main section */
 
+main{
+    background-color: rgba(246, 242, 207, 0.90);
+}
+
 .main_home{
     display: flex;
     justify-content: space-between;
@@ -136,6 +140,9 @@ header h1 {
 
 .content{
     flex: 1 1 78%; 
+    border: 3px solid orange;
+    padding: 5px 10px;
+    margin: 5px;
 }
 
 
@@ -196,111 +203,25 @@ aside#weather table tr:first-child th{
 
 }
 
-
-/* Style for History page article  */
-
-.history-h1 {
-	text-align: center;	
-}
-
-.history_article {
-    margin: 10px;
-    padding: 0 10px;
-}
-
-
-.history_article .featured-image {
-	width: 39%;
-	float: right;
-	margin-left: 20px;	
-}
-
-.history-btn a{
-    text-decoration: none;
-}
-
-.lib-war{
-    display: flex;
-}
-
-.part1{
-    flex: 0 0 65%;
-}
-
-/* Slideshow User Interface Elements */
-.slideshow-container {
-    flex: 0 0 30%;
-    position: relative;
-    max-width: 400px;
-}
-
-.cycle-pager {
-    position: absolute;
-    font-size: 3em;
-    top: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 900;
-    color: #818181;
-}
-
-.cycle-pager-active {
-    color: orange;
-}
-
-.controls button {
-    font-size: 5em;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 900;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-/* Style for Tourism page */
-
-
-.h1_tourism{
-    text-align: center;
-    width: 100%;
-}
-
-section.tourism{
-    display: flex;
-    padding: 10px;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.tourist_spot{
-    flex: 1;
-    margin: 10px;
-}
-
-.t-btn{
-    align-content: center;
-}
-
-.t-btn a{
-    text-decoration: none;
-}
 /* Style for footer */
 footer{
-    border-top: 1px dotted red;
+    background: linear-gradient(to bottom, #a51f1f 0%,#981d1e 26%,#701717 78%,#641616 100%);
+    display: flex;
+    padding: 5px;
 }
 
 footer p{
-    text-transform: uppercase;
+    flex: 1 1 49%;
+    color: white;
+    text-align: center;
+}
+
+footer  ul{
+    flex: 1 1 49%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
 
 .sr-only {

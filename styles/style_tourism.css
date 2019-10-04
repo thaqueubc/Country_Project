@@ -1,3 +1,31 @@
+/* Style for Tourism page */
+
+
+.h1_tourism{
+    text-align: center;
+    width: 100%;
+}
+
+section.tourism{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.tourist_spot{
+    flex: 1;
+    margin: 10px;
+}
+
+.t-btn{
+    align-content: center;
+}
+
+.t-btn a{
+    text-decoration: none;
+}
+
 /* form */
 
 .form-container {
