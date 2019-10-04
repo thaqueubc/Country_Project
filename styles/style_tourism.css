@@ -1,16 +1,18 @@
 /* Style for Tourism page */
 
-
 .h1_tourism{
     text-align: center;
     width: 100%;
+    padding-top: 10px;
 }
 
 section.tourism{
     display: flex;
+    flex-direction: column;
     padding: 10px;
     justify-content: space-around;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .tourist_spot{
@@ -19,7 +21,7 @@ section.tourism{
 }
 
 .t-btn{
-    align-content: center;
+    margin: 10px auto;
 }
 
 .t-btn a{
@@ -32,7 +34,7 @@ section.tourism{
     max-width: 550px;
     background-color: blanchedalmond;
     height: auto;
-    margin-top: 10px;
+    margin: 5px auto;
     border:2px dotted black;
 }
 
@@ -136,4 +138,10 @@ form input[type="submit"] {
     color: black;
     margin: 30px auto;
     display: block;
+}
+
+@media (min-width:650px){
+    section.tourism{
+        flex-direction: row;
+    }
 }
