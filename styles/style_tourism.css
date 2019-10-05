@@ -20,12 +20,14 @@ section.tourism{
     margin: 10px;
 }
 
-.t-btn{
-    margin: 10px auto;
+main button{
+    margin: 10px;
+    background: lightskyblue;
 }
 
-.t-btn a{
+main button a {
     text-decoration: none;
+    color: black;
 }
 
 /* form */
@@ -144,4 +146,17 @@ form input[type="submit"] {
     section.tourism{
         flex-direction: row;
     }
+
+    .tourist_spot{
+        flex: 0 1 45%;
+    }
+
+}
+
+
+@media (min-width:1000px){
+    .tourist_spot{
+        flex: 0 1 20%;
+    }
+
 }

@@ -19,10 +19,12 @@
 
 .history-btn {
     margin: 10px auto;
+    background: lightskyblue;
 }
 
 .history-btn a{
     text-decoration: none;
+    color: black;
 }
 
 .lib-war{
