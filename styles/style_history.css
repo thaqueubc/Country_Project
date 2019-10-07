@@ -1,8 +1,9 @@
 /* Style for History page article  */
 
 .history-h1 {
-    padding-top: 10px;
-	text-align: center;	
+    margin: 0;
+    text-align: center;	
+    padding: 5px;
 }
 
 .history_article {
