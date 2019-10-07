@@ -20,15 +20,18 @@ section.tourism{
     margin: 10px;
 }
 
-main button{
-    margin: 10px;
-    background: lightskyblue;
+.tourist_spot h2{
+    text-align: center;
 }
 
-main button a {
+
+main .btn{
+    margin: 10px;
+    background: lightskyblue;
     text-decoration: none;
     color: black;
 }
+
 
 /* form */
 
@@ -44,7 +47,7 @@ main button a {
     text-align: center;
     font-size:2em;
     color: black;
-    padding-top: 5px auto;
+    padding-top: 5px;
    
 }
 

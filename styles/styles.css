@@ -250,12 +250,19 @@ footer p{
     text-align: center;
 }
 
-footer  ul{
+footer div{
     flex: 1;
-    color: white;
+}
+
+footer  ul{
     display: flex;
     justify-content: space-around;
+    color: white;  
     list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;  
 }
 .fa{
     color: white;
@@ -325,7 +332,8 @@ footer  ul{
         flex: 1 1 49%;
     }
 
-    footer ul{
+    footer div{
         flex: 1 1 49%;
+        justify-content: space-between;
     }
 }

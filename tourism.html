@@ -52,30 +52,34 @@
     </header>
 
     <main>
-   <h1 class="h1_tourism">Explore Beautiful Bangladesh</h1>
+    <h1 class="h1_tourism">Explore Beautiful Bangladesh</h1>
    <section class="tourism">
         <article class="tourist_spot">
+            <h2>National Memorial</h2>
             <img src="images/national_memorial.jpg" alt="National Memorial">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum, recusandae earum sapiente ullam harum repudiandae illum aspernatur voluptates accusamus debitis perspiciatis fugiat ea totam! Iste voluptatem impedit nobis incidunt?</p>
         </article>
           
         <article class="tourist_spot">
+            <h2>Parliament House</h2>
             <img src="images/parliament_house.jpg" alt="Bangladesh Parliament House">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum, recusandae earum sapiente ullam harum repudiandae illum aspernatur voluptates accusamus debitis perspiciatis fugiat ea totam! Iste voluptatem impedit nobis incidunt?</p>
         </article>
           
         <article class="tourist_spot">
+            <h2>Cox's Bazar</h2>
             <img src="images/cox_bazar.jpg" alt="Cox's bazar">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum, recusandae earum sapiente ullam harum repudiandae illum aspernatur voluptates accusamus debitis perspiciatis fugiat ea totam! Iste voluptatem impedit nobis incidunt?</p>
         </article>
 
         <article class="tourist_spot">
+            <h2>Sylhet</h2>
             <img src="images/sylhet_1.jpg" alt="Ratargul Swamp Forest">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum, recusandae earum sapiente ullam harum repudiandae illum aspernatur voluptates accusamus debitis perspiciatis fugiat ea totam! Iste voluptatem impedit nobis incidunt?</p>
         </article>
    </section>
 
-   <button><a href="#"> Load More Places</a></button>
+   <a href="#" class="btn"> Load More Places</a>
 
   <section>
    
@@ -84,16 +88,19 @@
             <h2 id="04">Plan a Tour</h2>
                     
             <form method="post" name="form" class="form" id="form">
-                <label for="name">Name: </label>
-                <input name="name" type="name" id="name">
+                <label for="name">Name: 
+                <input name="name" type="text" id="name">
+                </label>
     
-                <label for="email">Email: </label>
+                <label for="email">Email: 
                 <input name="email" type="email" id="email">
+                </label>
     
-                <label for="phone">Phone: </label>
-                <input name="phone" type="phone" id="phone">
-    
-                <label for="guests">Number of people:</label>
+                <label for="phone">Phone: 
+                <input name="phone" type="number" id="phone">
+                </label>
+
+                <label for="guests">Number of people:
                 <select id="guests" name="guests"> 
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -102,21 +109,19 @@
                     <option value="5">5</option>
                     <option value="6">6</option>
                 </select>
+                </label>
     
-                <label for="date" >Departure Date:</label>
-                    <input type="date" name="date">
+                <label for="date" >Departure Date:
+                    <input type="date" name="date" id="date">
+                </label>
 
-                <label for="date" >Return Date:</label>
-                    <input type="date" name="date">
-    
-                <!-- <label for="pickup">Start Location:</label>
-                    <input type="radio" name="location" value="Dhaka" checked> <p>Dhaka</p>
-                    <input type="radio" name="location" value="Chittagong"> <p>Chittagong</p>
-                    <input type="radio" name="location" value="Sylhet"> <p>Sylhet</p> -->
+                <label for="ret_date" >Return Date:
+                    <input type="date" name="date" id="ret_date">
+                </label>
 
-                <label for="comments">Additional comments:</label>
+                <label for="comments">Additional comments:
                     <textarea name="comments" id="comments"></textarea>
-    
+                </label>
                 <input name="btn-submit" type="submit" id="submit" value="Submit">
         
             
@@ -131,17 +136,23 @@
     <footer>
         <p>&copy; 2019 Tasnuva Haque. For Education purpose only </p>
 
-        <ul>Follow us on:
-            <li class="social">
-                <a href="http://twitter.com/wesbos"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li class="social">
-                <a href="http://facebook.com/wesbos.developer"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li class="social">
-                <a href="http://instagram.com/wesbos"><i class="fa fa-instagram"></i></a>
-            </li>
-        </ul>
+        <div> 
+                <ul>
+                    <li class="social">
+                        <a href="#">Follow us on</a>
+                    </li>
+    
+                    <li class="social">
+                        <a href="http://twitter.com/wesbos"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="social">
+                        <a href="http://facebook.com/wesbos.developer"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="social">
+                        <a href="http://instagram.com/wesbos"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+        </div>
     </footer>
 
  </div>   
