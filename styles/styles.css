@@ -69,39 +69,51 @@ header h1 {
 
 
 /* style for nav bar */
-.top-bar nav{
-    display: none;
+
+body.animating {
+    overflow: hidden;
 }
 
-.nav-button {
-    font-size: 1.5em;
-    background-color:transparent;
-    border: none;
-    color: white;
-    display: block;
-    height: 50px;
-    line-height: 1;
+.show .nav-button{
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 2;
+}
+
+.top-bar nav{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    transform: scale(0);
+    background-color: black;
+    z-index: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    align-items: center;  
 }
 
-.hamburger-icon {
-    display: block;
-    height: 25px;
+nav.activated {
+    transition: transform 0.3s ease, visibility 0s 0.3s;
 }
 
-.show .top-bar nav {
-    width: 100%;
-    display: block;
+
+.show nav{
+    visibility: visible;
+    transform: scale(1);
+    transition: transform 0.3s ease, visibility 0s;
 }
 
-.top-bar ul {
+
+.top-bar nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
+    width: 90%;
 }
 
 .top-bar nav a {
@@ -110,15 +122,102 @@ header h1 {
     font-size: 1.2em;
     transition: background-color 0.5s ease;
     display: block;
+    border-right: none;
+    color: white;
+    border-bottom: none;
+    border-top: 2px solid #7a7a7a;
+    line-height: 50px;
+    text-align: center;
+
 }
+
+.top-bar nav li:last-child a {
+    border-bottom: 2px solid #7a7a7a;
+}
+
 
 .top-bar nav a:hover,
 .top-bar nav a:active,
 .top-bar nav a:focus {
     background-color: rgba(255,255,255, 0.3);
-    /* color: white; */
+    outline: none;
 }
 
+/* Style for animated hamburger */
+
+/* display the nav button using  display: block make the background transparent and setting a width*/
+.nav-button{
+    font-size: 1.5em;
+    display: block;
+    width: 30px;
+    background-color: transparent;
+    margin: 0 20px 20px 0;
+    padding: 0;
+   border: none;
+}
+
+.nav-button .hamburger-menu-content{
+    display: block;
+    width: 30px;
+    cursor: pointer;
+}
+
+.nav-button .bar {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-button .bar:before,
+.nav-button .bar:after{
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-button .bar:before{
+    top: 10px;
+    left: 0;
+}
+
+.nav-button .bar:after{
+    top: -10px;
+    left: 0;
+}
+
+.nav-button:focus {
+    outline: none;
+}
+
+.nav-button:focus .button-content,
+.nav-button:hover .button-content {
+    outline: 5px solid #7683C9;
+}
+
+.show .nav-button .bar{
+    background-color: transparent;
+}
+
+.show .nav-button .bar:before{
+    top: 0;
+    transform: rotate(45deg)
+}
+
+.show .nav-button .bar:after{
+    top: 0;
+    transform: rotate(-45deg)
+}
+
+/* banner image */
 .banner img{
     display: block;
     width: 100%;
@@ -298,7 +397,14 @@ footer ul li a{
     }
 
     .top-bar nav {
+        visibility: visible;
+        height: auto;
+        width: auto;
+        position: static;
         display: block;
+        transform: scale(1);
+        background-color: transparent;
+        border: none;
     }
 
     .top-bar ul {
@@ -309,6 +415,11 @@ footer ul li a{
         font-size: 1.5em;
         font-weight: bold;
         text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+        border: none;
+    }
+
+    .top-bar nav li:last-child a{
+        border-bottom: none;
     }
 
     .main_home{

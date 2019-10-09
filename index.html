@@ -37,10 +37,15 @@
     <header>
         <div class="top-bar">
             <h1><a href="index.html">Bangladesh</a></h1>
-            <button class="nav-button" id="nav-button"><span class="hamburger-icon">&#9776;</span><span class="sr-only">Menu</span></button>
+            <button class="nav-button" id="nav-button">
+                <span class="hamburger-menu-content" tabindex="-1">
+                    <span class="sr-only">Menu</span>
+                    <span class="bar"></span>
+                </span>
+            </button>
             <nav>
                 <ul id="nav-ul">
-                    <li><a href="index.html">Home</a></li>
+                    <li ><a href="index.html">Home</a></li>
                     <li><a href="history.html">History</a></li>
                     <li><a href="tourism.html">Tourism</a></li>
                 </ul>
@@ -118,5 +123,6 @@
 
 </div>    
 <script src="scripts/menu.js"></script>
+<script src="scripts/script-menu-overlay.js"></script>
 </body>
 </html>
