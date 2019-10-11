@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/style_tourism.css">
+    <link rel="stylesheet" href="styles/sticky_header.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
     <!-- social media icon -->
@@ -32,24 +33,28 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body>
+<body body class="pg-demo-position-sticky">
  <div class="wrapper">
-    <header>
-        <div class="top-bar">
-            <h1><a href="index.html">Bangladesh</a></h1>
-            <button class="nav-button" id="nav-button"><span class="hamburger-icon">&#9776;</span><span class="sr-only">Menu</span></button>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="tourism.html">Tourism</a></li>
-                </ul>
-            </nav>
-        </div><!-- end top-bar -->
-        <div class="banner">
-            <img class="banner_tourism" src="images/banner_tourism.jpg" alt="Cox's Bazar Bangladesh">
-        </div><!-- end of banner -->
-    </header>
+    <div id="top-bar-id" class="top-bar top-bar-sticky">
+        <h1><a href="index.html">Bangladesh</a></h1>
+        <button class="nav-button" id="nav-button">
+                <span class="hamburger-menu-content" tabindex="-1">
+                    <span class="sr-only">Menu</span>
+                    <span class="bar"></span>
+                </span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="tourism.html">Tourism</a></li>
+            </ul>
+        </nav>
+     </div><!-- end top-bar -->
+
+    <div class="banner">
+        <img class="banner_tourism" src="images/banner_tourism.jpg" alt="Cox's Bazar Bangladesh">
+    </div><!-- end of banner -->
 
     <main>
     <h1 class="h1_tourism">Explore Beautiful Bangladesh</h1>

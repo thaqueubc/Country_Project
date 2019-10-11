@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/sticky_header.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
     <!-- social media icon -->
@@ -34,8 +35,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <header>
-        <div class="top-bar">
+        <div id="top-bar-id" class="top-bar top-bar-sticky">
             <h1><a href="index.html">Bangladesh</a></h1>
             <button class="nav-button" id="nav-button">
                 <span class="hamburger-menu-content" tabindex="-1">
@@ -45,7 +45,13 @@
             </button>
             <nav>
                 <ul id="nav-ul">
-                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="index.html">Home</a>
+                       <ul class="sub-menu" id="sub-menu">
+                           <!-- <li><a href="">Location</a></li>
+                           <li><a href="">Culture</a></li>
+                           <li><a href="">weather</a></li> -->
+                       </ul>
+                    </li>
                     <li><a href="history.html">History</a></li>
                     <li><a href="tourism.html">Tourism</a></li>
                 </ul>
@@ -54,7 +60,6 @@
         <div class="banner">
             <img class="banner" src="images/banner_home.jpg" alt="Beautiful Bangladesh">
         </div><!-- end of banner -->
-    </header>
 
     <main class="main_home">
 

@@ -39,7 +39,7 @@ p {
 }
 
 /* Header Style */
-header a{
+.top-bar a{
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -47,7 +47,7 @@ header a{
     
 }
 
-header h1 {
+.top-bar h1 {
     font-size: 2.5em;
     margin: 0;
     font-family: 'Lobster', cursive;
@@ -126,7 +126,6 @@ nav.activated {
     color: white;
     border-bottom: none;
     border-top: 2px solid #7a7a7a;
-    line-height: 50px;
     text-align: center;
 
 }
@@ -381,10 +380,6 @@ footer ul li a{
 
 
 @media (min-width:650px){
-    header {
-        position: relative;
-    }
-
     .top-bar {
         width: 100%;
         position: absolute;
@@ -398,7 +393,7 @@ footer ul li a{
 
     .top-bar nav {
         visibility: visible;
-        height: auto;
+        height: 50px;
         width: auto;
         position: static;
         display: block;
@@ -421,6 +416,18 @@ footer ul li a{
     .top-bar nav li:last-child a{
         border-bottom: none;
     }
+
+    /* sub menu design */
+
+    /* .sub-menu{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        /* position: absolute; 
+        background: linear-gradient(to bottom, #a51f1f 0%,#981d1e 26%,#701717 78%,#641616 100%);
+        margin-top: 0;
+        padding-top: 0;
+    } */
 
     .main_home{
         flex-direction: row;
