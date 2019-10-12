@@ -7,7 +7,7 @@
 }
 
 .history_article {
-    margin: 10px;
+    margin: 5px;
     padding: 0 10px;
 }
 
@@ -34,7 +34,7 @@
 /* Position Sticky */
 .pg-demo-position-sticky .section-header-sticky {
 	line-height: 1;
-	padding: 20px 30px;
+	padding: 30px;
 	color: white;
 	margin-left: -20px;
 	margin-right: -20px;
@@ -42,18 +42,19 @@
 
 .pg-demo-position-sticky .section-1-header {
     background-color: #F05D5E;
+    text-align: center;
 }
 
 .pg-demo-position-sticky .section-2-header {
-	background-color: #0F7173;
+    background-color: #0F7173;
+    text-align: center;
 }
 
 .pg-demo-position-sticky .section-3-header {
-	background-color: #272932;
+    background-color: #272932;
+    text-align: center;
 }
 
-
-/* Position Sticky */
 .section-header-sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -117,6 +118,7 @@
 .lib-war{
     flex-direction: row;
 }
+
 .part1{
     flex: 0 0 65%;
 }
